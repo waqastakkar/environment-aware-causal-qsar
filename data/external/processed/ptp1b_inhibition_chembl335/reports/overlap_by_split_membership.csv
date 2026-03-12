@@ -1,0 +1,7 @@
+split,join_key,overlap_count
+train,molecule_id,0
+train,inchikey_vs_internal_split,0
+val,molecule_id,0
+val,inchikey_vs_internal_split,0
+test,molecule_id,0
+test,inchikey_vs_internal_split,0

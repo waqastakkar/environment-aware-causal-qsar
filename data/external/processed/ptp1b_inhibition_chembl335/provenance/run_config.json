@@ -1,0 +1,17 @@
+{
+  "target": "CHEMBL335",
+  "input_csv": "data/external/raw/CHEMBL335_inhibition_chembl.csv",
+  "ic50_parquet": "/home/wiky/Causality_QSAR/outputs/step3/multienv_compound_level.parquet",
+  "splits_dir": "/home/wiky/Causality_QSAR/outputs/step4",
+  "split_name": "scaffold_bm",
+  "outdir": "data/external/processed/ptp1b_inhibition_chembl335",
+  "inhib_threshold": 50.0,
+  "svg": true,
+  "font": "Times New Roman",
+  "bold_text": true,
+  "palette": "nature5",
+  "font_title": 16,
+  "font_label": 14,
+  "font_tick": 12,
+  "font_legend": 12
+}

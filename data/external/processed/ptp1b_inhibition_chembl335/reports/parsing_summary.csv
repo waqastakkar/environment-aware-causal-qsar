@@ -1,0 +1,5 @@
+stage,count
+raw_rows,1696
+after_endpoint_unit_value_smiles_filters,1516
+after_internal_dedup,1219
+after_ic50_leakage_removal,848

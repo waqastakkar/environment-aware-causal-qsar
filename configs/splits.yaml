@@ -1,0 +1,22 @@
+seed: 42
+train_frac: 0.8
+val_frac: 0.1
+test_frac: 0.1
+enable:
+  - random
+  - scaffold_bm
+  - time_publication
+  - env_holdout_assay
+  - env_holdout_pubfam
+  - combo_scaffold_env
+  - combo_time_env
+  - scaffold_matched_props
+  - hard_boundary
+  - neighbor_similarity
+time_key: publication_year
+assay_holdout_value: cell-based
+similarity_radius: 2
+similarity_nbits: 2048
+neighbor_threshold: 0.65
+hard_delta: 0.3
+match_props: [MW, LogP, TPSA, HBD, HBA, RotB, Rings]

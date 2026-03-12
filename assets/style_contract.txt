@@ -1,0 +1,8 @@
+Style Contract
+- SVG only figures
+- Editable text in SVG (svg.fonttype=none preferred)
+- Font: Times New Roman
+- Bold text for titles/labels/ticks/legend
+- Palette: Nature 5 (#E69F00, #009E73, #0072B2, #D55E00, #CC79A7)
+- Save paired figure_data for reproducibility when available
+- Include manifests and provenance hashes in manuscript pack

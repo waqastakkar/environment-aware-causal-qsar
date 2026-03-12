@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ptp1b-causal-qsar"
+version = "0.1.0"
+description = "Unified CLI for PTP1B causal QSAR pipeline"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "PyYAML>=6.0",
+]
+
+[project.scripts]
+ptp1bqsar = "ptp1b_causal_qsar.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ptp1b_causal_qsar*"]

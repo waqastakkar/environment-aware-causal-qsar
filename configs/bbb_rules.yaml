@@ -1,0 +1,8 @@
+# BBB/CNS-like regime thresholds for Step 3 environment assembly.
+MW_max: 450
+TPSA_max: 90
+HBD_max: 3
+LogP_min: 1
+LogP_max: 4
+use_RotB: true
+RotB_max: 8

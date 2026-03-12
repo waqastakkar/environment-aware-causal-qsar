@@ -1,0 +1,52 @@
+paper_id: ptp1b_causal_qsar_v1
+target: CHEMBL335
+smoke: false
+
+paths:
+  chembl_sqlite: /home/wiky/chembl_36/chembl_36_sqlite/chembl_36.db
+  data_root: data
+  outputs_root: outputs
+
+style:
+  svg_only: true
+  font: Times New Roman
+  bold_text: true
+  palette: nature5
+  font_title: 16
+  font_label: 14
+  font_tick: 12
+  font_legend: 12
+
+training:
+  task: regression
+  label_col: pIC50
+  seeds: [1, 2, 3, 4, 5]
+  split_default: scaffold_bm
+  epochs: 300
+  early_stopping_patience: 30
+
+robustness:
+  ensemble_size: 5
+  conformal_coverage: 0.90
+  ad_threshold: 0.35
+
+postprocess:
+  primary_endpoint: IC50
+  allowed_relations_primary: ["="]
+  units_primary: [nM, uM]
+  max_value_nM: 1.0e9
+  aggregate: median
+  secondary_endpoints: [Ki]
+  threshold: 6.0
+
+screening:
+  input_path: /home/wiky/chembl_36/HY-L021_Natural-Product-Library_2025-02-13.csv
+  input_format: csv
+  sep: ","
+  header: auto
+  smiles_col_name: smiles
+  id_col_name: smiles_id
+  name_col_name: name
+  smi_layout: smiles_id
+  cns_mpo_threshold: 4.0
+  topk: 500

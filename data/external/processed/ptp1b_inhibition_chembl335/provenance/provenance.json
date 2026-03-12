@@ -1,0 +1,34 @@
+{
+  "timestamp_utc": "2026-03-06T18:56:52.624775+00:00",
+  "cli_args": {
+    "target": "CHEMBL335",
+    "input_csv": "data/external/raw/CHEMBL335_inhibition_chembl.csv",
+    "ic50_parquet": "/home/wiky/Causality_QSAR/outputs/step3/multienv_compound_level.parquet",
+    "splits_dir": "/home/wiky/Causality_QSAR/outputs/step4",
+    "split_name": "scaffold_bm",
+    "outdir": "data/external/processed/ptp1b_inhibition_chembl335",
+    "inhib_threshold": 50.0,
+    "svg": true,
+    "font": "Times New Roman",
+    "bold_text": true,
+    "palette": "nature5",
+    "font_title": 16,
+    "font_label": 14,
+    "font_tick": 12,
+    "font_legend": 12
+  },
+  "python": "3.10.19",
+  "platform": "Linux-6.12.0-160000.9-default-x86_64-with-glibc2.40",
+  "git_commit": "41dc49fdf116d6f06345b9b7fa4f013d192acab9",
+  "script_sha256": "012ae0f497210b049b3248ee35b3436c143e02e7d0d3f375e4759135a3eb5a2c",
+  "input_hashes": {
+    "input_csv": "896ef6223546c90501d89dc4d0fca3c4895d23c03cb476cd01cc45ac38046e6b",
+    "ic50_parquet": "50620aca0bbdc58654e5d8ee9d5551324d47f46104b120d1a7bd538bb8121c76"
+  },
+  "counts": {
+    "raw_rows": 1696,
+    "after_endpoint_unit_value_smiles_filters": 1516,
+    "after_internal_dedup": 1219,
+    "after_ic50_leakage_removal": 848
+  }
+}
